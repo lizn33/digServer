@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+//c++中package后的即为命名空间
+package grpcProto;
+
+service gRPC 
+{
+  rpc Account (accRequest) returns (accReply) {}
+}
+
+message accRequest 
+{
+  uint32 user = 1;
+  string passwd = 2;
+}
+
+message accReply 
+{
+  bool exist = 1;
+}
