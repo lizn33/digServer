@@ -14,6 +14,4 @@ void run(string ip,uint16_t port)
         exit(0);
     }
     cout << "redis-con success" << endl;
-
-    
 }

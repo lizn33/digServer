@@ -10,11 +10,11 @@ service gRPC
 
 message accRequest 
 {
-  uint32 user = 1;
+  string user = 1;
   string passwd = 2;
 }
 
 message accReply 
 {
-  bool exist = 1;
+  uint32 error_num = 1;
 }
